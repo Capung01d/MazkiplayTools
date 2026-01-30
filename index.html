@@ -9,8 +9,6 @@
   <link rel="stylesheet" href="src/css/style.css">
 </head>
 
-<script src="src/js/script.js"></script>
-
 <body>
 
   <h1>🚀 Selamat Datang di MazkiplayTools</h1>
@@ -36,11 +34,22 @@
 
     <hr>
 
-    <!-- 📍 TRACK NOMOR -->
-    <h2>📍 Lacak Lokasi Nomor</h2>
+    <!-- 📍 TRACK NOMOR (POST) -->
+    <h2>📍 Lacak Lokasi Nomor (POST)</h2>
     <form action="track.php" method="post">
-      <label for="phoneTrack">Masukkan Nomor Ponsel:</label><br>
-      <input type="text" id="phoneTrack" name="phoneNumber" required>
+      <label for="phoneTrackPost">Masukkan Nomor Ponsel:</label><br>
+      <input type="text" id="phoneTrackPost" name="phoneNumber" required>
+      <br><br>
+      <button type="submit">Lacak</button>
+    </form>
+
+    <hr>
+
+    <!-- 📍 TRACK NOMOR (GET) -->
+    <h2>📍 Lacak Lokasi Nomor (GET)</h2>
+    <form action="track.php" method="get">
+      <label for="phoneNumber">Masukkan Nomor Ponsel:</label><br>
+      <input type="text" id="phoneNumber" name="phone" required>
       <br><br>
       <button type="submit">Lacak</button>
     </form>
@@ -76,9 +85,8 @@
 
   </div>
 
-  <!-- JS -->
-  <script src="src/js/main.js"></script>
+  <!-- JS (SATU SAJA) -->
+  <script src="src/js/script.js"></script>
 
 </body>
 </html>
-
