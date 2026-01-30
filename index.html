@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MazkiplayTools</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<script src="src/js/script.js"></script>
+
+<body>
+
+  <h1>🚀 Selamat Datang di MazkiplayTools</h1>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Tools</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div id="content">
+
+    <!-- 🔍 SEARCH INFORMASI -->
+    <h2>🔍 Cari Informasi</h2>
+    <form action="search.php" method="post">
+      <label for="phoneSearch">Masukkan Nomor Ponsel:</label><br>
+      <input type="text" id="phoneSearch" name="phone" required>
+      <br><br>
+      <button type="submit">Cari</button>
+    </form>
+
+    <hr>
+
+    <!-- 📍 TRACK NOMOR -->
+    <h2>📍 Lacak Lokasi Nomor</h2>
+    <form action="track.php" method="post">
+      <label for="phoneTrack">Masukkan Nomor Ponsel:</label><br>
+      <input type="text" id="phoneTrack" name="phoneNumber" required>
+      <br><br>
+      <button type="submit">Lacak</button>
+    </form>
+
+    <hr>
+
+    <!-- 🔐 DATA BREACH -->
+    <h2>🔐 Cek Kebocoran Data</h2>
+    <form action="pwned.php" method="post">
+      <label for="email">Masukkan Email:</label><br>
+      <input type="email" id="email" name="email" required>
+      <br><br>
+      <button type="submit">Cari Kebocoran</button>
+    </form>
+
+    <hr>
+
+    <!-- 🕵️ OSINT -->
+    <h2>🕵️ OSINT Lookup</h2>
+    <p>Masukkan Email atau Nomor Ponsel untuk pencarian OSINT (edukasi).</p>
+
+    <form action="osint.php" method="get">
+      <input
+        type="text"
+        name="query"
+        placeholder="Email atau Nomor Ponsel"
+        required
+      >
+      <input type="hidden" name="type" value="contact">
+      <br><br>
+      <button type="submit">🔍 Cari OSINT</button>
+    </form>
+
+  </div>
+
+  <!-- JS -->
+  <script src="src/js/main.js"></script>
+
+</body>
+</html>
+
